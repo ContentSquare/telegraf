@@ -59,6 +59,7 @@ func Standalone() {
 
 	n := &NTPQ{}
 	n.runQ = n.runq
+	n.DNSLookup = false
 	n.Gather(acc)
 
 	close(chanMetrics)
